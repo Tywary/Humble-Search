@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Humble Search</title>
+        <script src="https://use.fontawesome.com/decf3c85a5.js"></script>
+        <link rel="shortcut icon" href="Hlogo.png"/>
+    </head>
+
+  <style>
+.seico {
+  padding-right:10px;
+}
+
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  background-color: #f7f7f7;
+  font-family: "Lato", sans-serif;
+
+}
+
+.custom {
+  cursor: url(cursor.png), auto;
+  size: 50%;
+}
+a {
+ text-decoration: none;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.footer {
+  background-color:white;
+  position: bottom;
+
+}
+
+            table, th, td {
+              padding: 10px;
+              position: center; 
+             }
+            table {
+              border-spacing: 15px;
+              position: center;
+             }
+            .head {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: bold;
+                color: #DC143C;
+                  }
+            input[type=submit] {
+                border-radius: 15px;
+                border: white;
+                padding: 10px 15px 10px 15px;
+                color: white;
+                background-color: orange;
+              }
+            input[type=text] {
+                border-color: blue;
+                border-radius: 5px;
+                width: 100%;
+                //box-sizing: border-box;
+                border: border: 1px #808080;
+                //border-radius: 5px;
+                //font-size: 8px;
+                background-color: white;
+                background-position: 10px 10px; 
+                background-repeat: no-repeat;
+                padding: 12px 20px 12px 30px;
+              }
+   </style>
+ <body class="custom">
+  <span style="font-size:30px;cursor:pointer;float:right;padding-right:10px;color:#a5a5a5;" onclick="openNav()">&#9776; </span>
+     <p style="float:right;">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="https://www.google.com">Google Search</a> <br><br>
+          <a href="https://tineye.com/">Image Search</a> <br><br>
+          <a href="https://www.duckduckgo.com">Private Search</a><br><br>
+          <a href="https://www.indeed.com/worldwide">Job Search</a><br><br>
+          <a href="https://www.bing.com/">Bing Search</a> <br><br>
+          <a href="https://search.creativecommons.org/">Copyright Free Search</a> <br><br>
+          <a href="https://www.startpage.com/">Private Google Search</a><br><br>
+          <a href="https://www.wiki.com/">Wiki Search</a><br><br>
+          <a href="https://boardreader.com/">Forum Search</a> <br><br>
+          <a href="https://slideshare.net/">Slide Search</a> <br><br>
+          <a href="http://www.blogsearchengine.org/">Blog Search</a><br><br>
+          <a href="https://www.amazon.com/">Amazon Product Search</a><br><br>
+          <a href="https://www.nationsonline.org/index.html/">News Search</a> <br><br>
+          <a href="https://www.youtube.com">Youtube Search</a> <br><br>
+          <a href="https://darksearch.io/">Darkweb Search</a><br><br>
+          <a href="https://github.com/">Github Search</a><br><br>
+          <a href="https://www.whitepages.com/">People Search</a><br><br>
+          <a href="https://www.imdb.com/">Movie Search</a>
+     </div>
+     </p>
+      <div class= "head" style="font-size: 80px;text-align:center;">
+            <span style='color: #4285f4'>H</span><span style='color: #ea4335'>u</span><span style='color: #fbbc05'>m</span><span style='color: #4285f4'>b</span><span style='color: #34a853'>l</span><span style='color: #ea4335'>e</span> 
+         </div>
+     <form action="https://www.google.com/search">
+     <table class="center" style="width:40%;">
+          <tr>
+             <td><h3>Find pages with...</h3><td>
+          </tr>
+          <tr>
+            <td>All these words:</td>  
+            <td><input type="text" name="q" ></td> 
+            <td><i class="fa fa-search" style="padding-right:15px;" type="submit" aria-hidden="true"></i>
+            </td>
+          </tr>
+          <tr>  
+            <td>This exact word or phrase:</td> 
+            <td><input type="text" name="q" ></td>
+            <td class="seico"><i class="fa fa-search" style="padding-right:15px;" type="submit" aria-hidden="true"></i></td>
+          </tr>
+          <tr>
+            <td>Any of these words:</td> 
+            <td><input type="text" name="q" ></td>
+            <td class="seico"><i class="fa fa-search" style="padding-right:15px;" type="submit" aria-hidden="true"></i></td>
+          </tr>  
+          <tr>
+            <td>None of these words:</td> 
+            <td><input type="text" name="q" ></td>
+            <td class="seico"><i class="fa fa-search" style="padding-right:15px;" type="submit" aria-hidden="true"></i></td>
+          </tr>
+           <tr>
+           <td><button style="visibility:hidden;"></button></td>
+           <td><input type= "submit" value="Humble Search"></td>
+           </tr>
+    </form>
+    <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<div class="center" style="position:bottom;text-align:center; " >
+<p>Made with &#10084; By <a href="https://github.com/Tywary">Tywary</a></p> 
+</div>
+<!-- code=uS+bS3twztn2qrane5HQPMK2HNKDICjXzqVHOuGfbBA= -->
+ </body>
+</html>
